@@ -1,25 +1,27 @@
+import html
+
+
 class QuizBrain:
-    def __init__(self,q_list):
+
+    def __init__(self, q_list):
         self.question_number = 0
+        self.score = 0
         self.question_list = q_list
+        self.current_question = None
 
+    def still_has_questions(self):
+        return self.question_number < len(self.question_list)
 
+    def next_question(self):
+        self.current_question = self.question_list[self.question_number]
+        self.question_number += 1
+        q_text = html.unescape(self.current_question.text)
+        return f"Q.{self.question_number}: {q_text}"
 
-
-    def next_question(self,q_num,q_list):
-        ans = True
-        while ans:
-            user_ans = input(f"Q.{q_num + 1}: {q_list[q_num].text}. (True/False)?:").title()
-            if user_ans == q_list[q_num].answer:
-                print(f"You got it right!\nThe correct answer was: {q_list[q_num].answer}."
-                      f"\nYour current score is: {q_num + 1}/{q_num + 1}")
-                print("\n")
-                q_num += 1
-                if q_num == 12:
-                    print("You've completed the quiz")
-                    ans = False
-
-            else:
-                print(f"That's wrong.\nThe correct answer was: {q_list[q_num].answer}"
-                      f"\nYour final score is: {q_num}/{q_num + 1}")
-                ans = False
+    def check_answer(self, user_answer):
+        correct_answer = self.current_question.answer
+        if user_answer.lower() == correct_answer.lower():
+            self.score += 1
+            return True
+        else:
+            return False
