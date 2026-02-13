@@ -1,20 +1,30 @@
-# 🔐 Password Manager in C  
+# 🎯 Quizler - Python Quiz Application  
 
 ## 📌 Project Summary  
-This project is a **console-based password manager** developed in **C**. It allows users to store, retrieve, search, and delete login credentials locally. It demonstrates key programming concepts such as **file handling**, **dynamic memory management**, and **pointer-based string manipulation**.  
+Quizler is a **GUI-based True/False quiz application** built with **Python** and **Tkinter**. It fetches trivia questions dynamically from the [Open Trivia Database](https://opentdb.com/) API and provides an interactive interface where users can answer questions, get instant feedback, and track their score.  
 
 ## ✨ Features  
-- ➕ Add new credentials (website, username, password)  
-- 📂 View all saved credentials  
-- 🔍 Search credentials by website or username  
-- ❌ Delete credentials  
-- 💾 Persistent storage in a text file (`credentials.txt`)  
+- Fetches fresh questions from OpenTDB API  
+- Interactive Tkinter-based GUI  
+- True/False buttons with instant feedback (green/red highlights)  
+- Real-time score tracking  
+- End-of-quiz summary with final score  
+- Modular design with separate classes for questions, quiz logic, and UI  
 
 ## 🧠 Concepts Demonstrated  
-- **Structures and functions** → Used to define and manipulate credential records  
-- **File operations** → `fopen`, `fprintf`, `fscanf`, `remove`, `rename` for persistent storage  
-- **Pointer-based string manipulation** → For input parsing and dynamic handling  
-- **Dynamic memory management** → Allocating memory for credential arrays and strings  
-- **Modular programming using header files** → Organized into reusable components for clarity and scalability  
+- **Object-Oriented Programming (OOP)** → Classes for `Question`, `QuizBrain`, and `QuizInterface`  
+- **API Integration** → Using `requests` to fetch trivia questions  
+- **GUI Development** → Tkinter canvas, labels, and buttons  
+- **Event-driven programming** → Button callbacks and delayed feedback with `after()`  
+- **Data handling** → Parsing JSON responses and unescaping HTML entities  
 
 ## 📁 Directory Structure  
+**Quizler/**
+- `docs/`  
+  - `ProjectReport.pdf`
+- `include/`  
+  - `passwords.h`
+- `src/`  
+  - `main.c`
+  - `passwords.c`
+- `README.md`
