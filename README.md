@@ -28,3 +28,14 @@ Quizler is a **GUI-based True/False quiz application** built with **Python** and
   - `main.c`
   - `passwords.c`
 - `README.md`
+## 🚀 Getting Started  
+### Prerequisites  
+- Python 3.8+  
+- `requests` library  
+
+Install dependencies:  
+```bash
+pip install requests
+Run the Quiz
+python main.py
+Run the Quiz
