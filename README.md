@@ -39,3 +39,15 @@ pip install requests
 Run the Quiz
 python main.py
 Run the Quiz
+
+# 🔮 Future Enhancements
+- Category and difficulty selection
+- Restart button for replayability
+- Support for multiple-choice questions
+- Leaderboard or high-score tracking
+
+👤 Author
+- Surya Prakash Sharma — Developer
+
+
+
