@@ -25,7 +25,7 @@ Quizler is a **GUI-based True/False quiz application** built with **Python** and
 - `include/`  
   - `passwords.h`
 - `src/`  
-  - `main.c`
+  - `main.py`
   - `passwords.c`
 - `README.md`
 ## 🚀 ***Getting Started***  
