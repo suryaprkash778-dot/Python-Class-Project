@@ -18,16 +18,7 @@ Quizler is a **GUI-based True/False quiz application** built with **Python** and
 - **Event-driven programming** → Button callbacks and delayed feedback with `after()`  
 - **Data handling** → Parsing JSON responses and unescaping HTML entities  
 
-## 📁 ***Directory Structure***  
-**Quizler/**
-- `docs/`  
-  - `ProjectReport.pdf`
-- `include/`  
-  - `passwords.h`
-- `src/`  
-  - `main.py`
-  - `passwords.c`
-- `README.md`
+
 ## 🚀 ***Getting Started***  
 ### ***Prerequisites***  
 - Python 3.8+  
